@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="row">
+
+		<div class="col-sm-3" style="background-color: lavender;">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Item Name</th>
+						<th>Price(per kg)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Rice</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>Apple</td>
+						<td>110</td>
+					</tr>
+					<tr>
+						<td>Sugar</td>
+						<td>43</td>
+					</tr>
+					<tr>
+						<td>Pulse</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>Onion</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Soya bean Oil</td>
+						<td>110</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-2"></div>
+
+
+
+		<div class="col-sm-5">
+			<br>
+			<br>
+			<div id="itemInput">
+				<input id='inputItem' type="text" placeholder="Enter Item" onkeydown="enterInput(event)"/>
+				 <input id='inputQty'type="number" placeholder="Quantity" onkeydown="enterInput(event)"/>
+				<button onclick="addRow()"></button>
+				<br>
+				<br>
+			</div>
+
+			<div class="col-sm-8" id="itemTable-parent">
+				<table class="table" id="itemTable">
+					<thead>
+						<tr>
+							<th>ItemName</th>
+							<th>Price</th>
+							<th>Delete</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- <tr id="item1">
+							<td>Soya bean Oil</td>
+							<td>110</td>
+							<td><img src="images/delete.png" onclick='deleteRow(item1)' /></td>
+						</tr> -->
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>Total</th>
+							<th>000</th>
+							<th></th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="script.js"></script>
+
+
+</body>
+</html>
