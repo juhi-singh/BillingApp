@@ -10,7 +10,7 @@ var deleteRow = function(row){
 
 var addRow = function(){
 
-	var table = document.getElementById("itemTable").getElementsByTagName("tbody")[0].getElementsByTagName("tr").length;
+	var table = document.getElementById("itemTable").getElementsByTagName("tbody")[0];
 
 	 // Insert a row in the table at the last row
 	 var newRow   = table.insertRow();
