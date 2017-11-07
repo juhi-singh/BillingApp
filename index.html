@@ -46,17 +46,19 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="col-sm-2"></div>
+		<div class="col-sm-1"></div>
 
 
 
-		<div class="col-sm-5">
+		<div class="col-sm-8">
 			<br>
 			<br>
 			<div id="itemInput">
 				<input id='inputItem' type="text" placeholder="Enter Item" onkeydown="enterInput(event)"/>
+				<input id='inputPrice'type="number" placeholder="Price" onkeydown="enterInput(event)"/>
 				 <input id='inputQty'type="number" placeholder="Quantity" onkeydown="enterInput(event)"/>
-				<button onclick="addRow()"></button>
+				 
+				<button onclick="addRow()">Add</button>
 				<br>
 				<br>
 			</div>
@@ -66,21 +68,25 @@
 					<thead>
 						<tr>
 							<th>ItemName</th>
+							<th>Quantity</th>
 							<th>Price</th>
+							<th>Total</th>
 							<th>Delete</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody id="table-body">
 						<!-- <tr id="item1">
 							<td>Soya bean Oil</td>
 							<td>110</td>
 							<td><img src="images/delete.png" onclick='deleteRow(item1)' /></td>
 						</tr> -->
 					</tbody>
-					<tfoot>
-						<tr>
+					<tfoot id="table-foot">
+						<tr id="row1">
+							<th></th>
+							<th></th>
 							<th>Total</th>
-							<th>000</th>
+							<th></th>
 							<th></th>
 						</tr>
 					</tfoot>
